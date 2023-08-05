@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  
+
+  // Loop over the messages array
+  each message in messages
+    .message
+      p= message.text
+      span= " - " + message.user
+      span= " (" + message.added + ")"
+      
